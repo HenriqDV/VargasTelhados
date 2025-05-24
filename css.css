@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+
+/* */
+elemento {
+  --main-bg-color: brown;
+}
+
 /* Estilo do corpo da página */
 body {
   margin: 0;
