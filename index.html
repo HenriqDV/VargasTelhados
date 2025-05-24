@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,26 +11,29 @@
 </head>
 
 <body>
-  <header class="head1">
+  <!-- Cabeçalho com logo e navegação -->
+  <header class="head1" class="text-center">
     <nav id="partedohead" class="container d-flex justify-content-center align-items-center">
-      <!-- Logo -->
-      <img src="img/logo_fundopng.png" class="logo me-4" style="max-height: 80px" alt="Logo" />
+      <!-- Logo da empresa -->
 
-      <!-- Links -->
       <ul class="navbar-nav flex-row gap-4" id="navbar">
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Trabalhos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Feedbacks</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        <!-- Links de navegação -->
+        <img src="img/logo_fundopng.png" class="logo ml-6" alt="Logo" />
+        <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trabalho">Trabalhos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Feedbacks">Feedbacks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="divsobre" class="container text-center">
+  <!-- Seção Sobre a Empresa -->
+  <section id="Sobre" id="divsobre" class="container text-center">
     <div id="divpai_sobre" class="row align-items-center flex-column flex-md-row">
       <div id="divtextosobre" class="col-md-6 mb-4 mb-md-0">
         <h2>Sobre a empresa</h2>
         <p>
+          <!-- Texto institucional -->
           Atuando no mercado desde 2016, a Vargas Manutenção em Telhados é
           especializada em serviços de impermeabilização e reparos em telhados
           com problemas de infiltração. Nosso compromisso é oferecer soluções
@@ -41,21 +45,22 @@
         </div>
       </div>
       <div class="col-md-6 d-flex justify-content-center">
+        <!-- Imagem ilustrativa da empresa -->
         <div id="img-fluid">
-          <img id="fototeclado" src="img/Telhado-impermeabilizado.jpg" alt="fotoDoTelhado" style="width: 100%; height: 100%; object-fit: cover;" />
+          <img id="fototeclado" src="img/Telhado-impermeabilizado.jpg" alt="fotoDoTelhado"
+            style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="container text-center">
     <div id="div_seg_qualidade_gar" class="row">
-      <h2 class="">Segurança, qualidade e garantia</h2>
+      <h4 class="">Segurança, qualidade e garantia</h4>
       <div class="col">
+        <!-- Ícone e texto de serviços realizados -->
         <img id="casa" src="img/icons/casa.png" alt="Casa" />
         <p>Mais de 1.000 serviços realizados com competência!</p>
       </div>
       <div class="col">
+        <!-- Ícone e texto de garantia -->
         <img id="cadeado" src="img/icons/cadeado.png" alt="Cadeado" />
         <p>
           Após o serviço, garantia de 1 ano para reparos e 6 anos em caso de
@@ -63,6 +68,7 @@
         </p>
       </div>
       <div class="col">
+        <!-- Ícone e texto de abrangência -->
         <img id="cifrao" src="img/icons/cifrao.png" alt="Cifrão" />
         <p>
           Atendemos a todo o estado do Rio Grande do Sul e Santa Catarina por
@@ -72,10 +78,12 @@
     </div>
   </section>
 
-  <section class="container text-center">
+  <!-- Carrossel de Trabalhos Realizados -->
+  <section id="trabalho" class="container text-center">
     <h2>Trabalhos realizados</h2>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+        <!-- Cada .carousel-item representa um trabalho realizado -->
         <div class="carousel-item active">
           <div class="card">
             <img src="img/jobs/trabalho1.jpg" class="d-block w-100" alt="..." />
@@ -102,6 +110,7 @@
           </div>
         </div>
       </div>
+      <!-- Botões de navegação do carrossel -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </button>
@@ -111,15 +120,18 @@
     </div>
   </section>
 
-  <section class="container text-center">
-    <h2>Depoimentos</h2>
+  <!-- Seção de Depoimentos dos Clientes -->
+  <section id="Feedbacks" class="container text-center">
+    <h2>Feedbacks</h2>
     <div class="testimonials">
+      <!-- Cada .testimonial representa um depoimento -->
       <div class="testimonial active">
         <img src="img/client/cliente1.jpg" alt="Cliente 1" />
         <p class="lead">
           Trabalho caprichoso, Vargas manutenções é comprometido com seus clientes... Recomento...
         </p>
         <div>
+          <!-- Estrelas de avaliação -->
           <i class="fas fa-star" style="color:gold;"></i>
           <i class="fas fa-star" style="color:gold;"></i>
           <i class="fas fa-star" style="color:gold;"></i>
@@ -159,8 +171,8 @@
     </div>
   </section>
 
-  <footer class="text-center text-white" style="background-color: #3f51b5">
-    <!-- Grid container -->
+  <!-- Rodapé com contatos e redes sociais -->
+  <footer id="Contato" class="text-center text-white" style="background-color: #3f51b5">
     <div class="container">
       <section class="mb-3">
         <div class="row d-flex justify-content-center">
@@ -173,19 +185,19 @@
           </div>
         </div>
       </section>
-      <!-- Section: Social -->
+      <!-- Ícones de redes sociais -->
       <section class="text-center mb-5">
         <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #3b589800" href="https://www.facebook.com/vargastelhados/?locale=pt_BR" role="button"><i
+        <a data-mdb-ripple-init class="btn" style="background-color: #3b589800"
+          href="https://www.facebook.com/vargastelhados/?locale=pt_BR" role="button"><i
             class="fab fa-facebook-f fa-3x"></i></a>
         <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #ac2bac00" href="https://www.instagram.com/vargas_telhados/" role="button"><i
-            class="fab fa-instagram fa-3x"></i></a>
+        <a data-mdb-ripple-init class="btn" style="background-color: #ac2bac00"
+          href="https://www.instagram.com/vargas_telhados/" role="button"><i class="fab fa-instagram fa-3x"></i></a>
         <!-- Whatsapp -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #25d36500" href="https://wa.me/5551985380601" role="button"><i
-            class="fab fa-whatsapp fa-3x"></i></a>
+        <a data-mdb-ripple-init class="btn" style="background-color: #25d36500" href="https://wa.me/5551985380601"
+          role="button"><i class="fab fa-whatsapp fa-3x"></i></a>
       </section>
-      <!-- Section: Social -->
     </div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2020 Copyright:
@@ -193,7 +205,9 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Scripts do Bootstrap e do projeto -->
+
+  <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 
