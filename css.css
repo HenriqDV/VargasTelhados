@@ -28,14 +28,14 @@ nav {
   background-color: rgb(255, 255, 242);
 }
 
-#fototeclado {
-  border-radius: 30px;
+#img-fluid{
+  width: 100%; 
+  max-width: 350px; 
+  aspect-ratio: 1 / 1; 
+  overflow: hidden; 
+  border-radius: 8px;
 }
 
-#divtextosobre {
-  margin-top: 80px;
-  margin-right: 110px;
-}
 
 #div_seg_qualidade_gar {
   margin: 50px;
@@ -101,14 +101,13 @@ nav {
     margin-right: 0;
     flex: 0 0 33.333333%;
     display: block;
-      width: 350px; /* ou o tamanho que quiser */
-  margin-right: 10px;
-  flex: 0 0 auto;
+      width: 350px; 
+    flex: 0 0 auto;
   }
 }
 
 .carousel-inner {
-  padding: 1em;
+
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -121,7 +120,7 @@ nav {
   display: none;
 }
 .carousel-item {
-  flex: 0 0 300px; /* largura fixa, ajuste conforme seu layout */
+  flex: 0 0 300px; 
   margin: 0 16px;
   opacity: 0.5;
   transform: scale(0.9);
@@ -133,7 +132,9 @@ nav {
   transform: scale(1.08);
   z-index: 2;
 }
-
+.carousel-item {
+  margin-left: 1.226cm;
+}
 
 
 

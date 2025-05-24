@@ -51,7 +51,7 @@ $(document).ready(function () { // Aguarda o carregamento do DOM
         var itemWidth = $active.outerWidth(true);                   // Largura do item ativo
         // Calcula a posição para centralizar o item ativo
         var scrollTo = $active.position().left + $carouselInner.scrollLeft() - (containerWidth / 2) + (itemWidth / 2);
-        $carouselInner.animate({ scrollLeft: scrollTo }, 400);      // Anima o scroll para centralizar
+        $carouselInner.animate({ scrollLeft: scrollTo }, 10);      // Anima o scroll para centralizar
     }
 
     // Inicializa o carrossel centralizando e ativando o item correto
@@ -59,9 +59,9 @@ $(document).ready(function () { // Aguarda o carregamento do DOM
     centerActive();
 
     // Avança automaticamente o carrossel a cada 5 segundos
-    setInterval(function() {
-        $(".carousel-control-next").click(); // Simula o clique no botão "próximo"
-    }, 5000);
+//    setInterval(function() {
+//        $(".carousel-control-next").click(); // Simula o clique no botão "próximo"
+//    }, 5000);
 
 
 // EFEITO DE DEPOIMENTOS AUTOMÁTICO (slide com fade)
