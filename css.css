@@ -72,7 +72,13 @@ nav {
 /* Links do menu de navegação */
 .nav-link {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  color: #222;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #3f51b5;
 }
 
 /* Container da barra de navegação */
@@ -92,8 +98,10 @@ nav {
 }
 
 .logo {
-  max-height: 100px;
-  margin-right: 100px;
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  margin-right: 24px;
 }
 
 /* Parte interna do cabeçalho */
@@ -144,7 +152,8 @@ nav {
 .carousel-item {
   flex: 0 0 300px;
   margin: 0 16px 0 1.226cm;
-  /* margem esquerda para deslocar os cards */
+  height: 200px;
+  width: 300px;
   opacity: 0.5;
   transform: scale(0.9);
   transition: opacity 0.4s, transform 0.4s;
@@ -158,17 +167,8 @@ nav {
   z-index: 2;
 }
 
-/* Cartão do carrossel */
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-  width: 300px;
-  height: 200px;
-}
-
 /* Imagem dentro do card do carrossel */
-.card img {
+.d-block {
   width: 100%;
   height: 100%;
 }
@@ -221,4 +221,24 @@ nav {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+/* Espaçamento entre itens do menu em telas pequenas */
+@media (max-width: 743px) {
+  .logo {
+    max-height: 60px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #partedohead {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
 }
