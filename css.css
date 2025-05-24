@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 242);
+}
+#casa {
+  border-radius: 50%;
+  margin: 15px;
+}
+#cadeado {
+  border-radius: 50%;
+  margin: 15px;
+}
+#cifrao {
+  border-radius: 50%;
+  margin: 15px;
+}
+
+nav {
+  background-color: rgb(255, 255, 242);
+}
+
+#fototeclado {
+  border-radius: 30px;
+}
+#divtextosobre {
+  margin-top: 80px;
+  margin-right: 110px;
+}
+#div_seg_qualidade_gar {
+  margin: 50px;
+}
+.botao_sobre {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(44, 25, 150);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer; /* opcional: cursor de botão */
+  color: white;
+}
+
+#Saibamais {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 20px;
+}
+#navbar {
+  height: 100px;
+  width: 100;
+  background-color: rgb(214, 217, 231);
+  align-items: center;
+}
+.head1 {
+  margin-bottom: 40px;
+  background-color: rgb(214, 217, 231);
+  justify-content: center;
+}
+#partedohead {
+  background-color: rgb(214, 217, 231);
+}
+.col {
+  font-size: 20px;
+}

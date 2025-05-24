@@ -1,219 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Vargas Manutenção em Telhados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css.css" />
     <style>
-        @media (min-width: 768px) {
+      @media (min-width: 768px) {
         .carousel-inner {
-            display: flex;
+          display: flex;
         }
         .carousel-item {
-            margin-right: 0;
-            flex: 0 0 33.333333%;
-            display: block;
-        }}
-        .carousel-inner{
-            padding: 1em;
+          margin-right: 0;
+          flex: 0 0 33.333333%;
+          display: block;
         }
-        .card{
-            margin: 0 .5em;
-            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-            border: none;
-        }
-        .carousel-control-prev, .carousel-control-next{
-            background-color: #e1e1e1;
-            width: 6vh;
-            height: 6vh;
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    
+      }
+      .carousel-inner {
+        padding: 1em;
+      }
+      .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #e1e1e1;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     </style>
-</head>
-<body>
-    <header class="bg-white text-black py-4">
-        <nav class="container d-flex justify-content-center align-items-center">
-            <!-- Logo -->
-            <img src="img/logo.png" class="logo me-4" style="max-height: 80px;" alt="Logo">
-    
-            <!-- Links -->
-            <ul class="navbar-nav flex-row gap-4">
-                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Trabalhos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Feedbacks</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="head1">
+      <nav
+        id="partedohead"
+        class="container d-flex justify-content-center align-items-center"
+      >
+        <!-- Logo -->
+        <img
+          src="img/logo_fundopng.png"
+          class="logo me-4"
+          style="max-height: 80px"
+          alt="Logo"
+        />
+
+        <!-- Links -->
+        <ul class="navbar-nav flex-row gap-4" id="navbar">
+          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Trabalhos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Feedbacks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    
-    
-    
-    
-    
 
-    <section class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h2>Sobre a empresa</h2>
-                <p>Atuando no mercado desde 2016, a
-                    Vargas Manutenção em Telhados é
-                    especializada em serviços de
-                    impermeabilização e reparos em
-                    telhados com problemas de infiltração.
-                    Nosso compromisso é oferecer soluções
-                    eficientes, com qualidade e
-                    responsabilidade, garantindo a satisfação
-                    de nossos clientes.</p>
-                <button>Saiba Mais</button>
-            </div>
-            <img class="col" src="" alt="fotoDoTelhado">
+    <section id="divsobre" class="container text-center">
+      <div id="divpai_sobre" class="row">
+        <div id="divtextosobre" class="col">
+          <h2>Sobre a empresa</h2>
+          <p>
+            Atuando no mercado desde 2016, a Vargas Manutenção em Telhados é
+            especializada em serviços de impermeabilização e reparos em telhados
+            com problemas de infiltração. Nosso compromisso é oferecer soluções
+            eficientes, com qualidade e responsabilidade, garantindo a
+            satisfação de nossos clientes.
+          </p>
+          <div class="botao_sobre">
+            <div class="text_botao">Saiba Mais</div>
+          </div>
         </div>
+        <img
+          id="fototeclado"
+          class="col"
+          src="img/Telhado-impermeabilizado.jpg"
+          alt="fotoDoTelhado"
+        />
+      </div>
     </section>
 
     <section class="container text-center">
-        <div class="row">
-            <h2 class="">Segurança, qualidade e garantia</h2>
-            <div class="col">
-                <img src="" alt="Casa">
-                <p>Mais de 1.000 serviços realizados com competência!</p>
-            </div>
-            <div class="col">
-                <img src="" alt="Cadeado">
-                <p>Após o serviço, garantia de 1 ano para reparos e 6 anos em caso de impermeabilização</p>
-            </div>
-            <div class="col">
-                <img src="" alt="Dinheiro">
-                <p>Atendemos a todo o estado do Rio Grande do Sul e Santa Catarina por um preço acessível!</p>
-            </div>
+      <div id="div_seg_qualidade_gar" class="row">
+        <h2 class="">Segurança, qualidade e garantia</h2>
+        <div class="col">
+          <img id="casa" src="casa.png" alt="Casa" />
+          <p>Mais de 1.000 serviços realizados com competência!</p>
         </div>
+        <div class="col">
+          <img id="cadeado" src="cadeado.png" alt="Cadeado" />
+          <p>
+            Após o serviço, garantia de 1 ano para reparos e 6 anos em caso de
+            impermeabilização
+          </p>
+        </div>
+        <div class="col">
+          <img id="cifrao" src="cifrao.png" alt="Cifrão" />
+          <p>
+            Atendemos a todo o estado do Rio Grande do Sul e Santa Catarina por
+            um preço acessível!
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="container text-center">
-        <h2>Trabalhos realizados</h2>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
+      <h2>Trabalhos realizados</h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="img/jobs/trabalho1.jpg" class="d-block w-100" alt="..." />
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="img/jobs/trabalho2.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="img/jobs/trabalho3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="img/jobs/trabalho4.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <img src="img/jobs/trabalho5.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </section>
 
     <section class="container text-center">
-        <div class="row">
-            <h2>Depoimentos</h2>
-            <div class="col">
-                <img src="" alt="">
-                <p>Espaço para conteúdo do comentário fornecidos pelo cliente após a finalização do serviço</p>
-                <p>Nome, cidade/estado do cliente</p>
-            </div>
-            <div class="col">
-                <img src="" alt="">
-                <p>Espaço para conteúdo do comentário fornecidos pelo cliente após a finalização do serviço</p>
-                <p>Nome, cidade/estado do cliente</p>
-            </div>
-            <div class="col">
-                <img src="" alt="">
-                <p>Espaço para conteúdo do comentário fornecidos pelo cliente após a finalização do serviço</p>
-                <p>Nome, cidade/estado do cliente</p>
-            </div>
+      <div class="row">
+        <h2>Depoimentos</h2>
+        <div class="col">
+          <img src="" alt="" />
+          <p>
+            Espaço para conteúdo do comentário fornecidos pelo cliente após a
+            finalização do serviço
+          </p>
+          <p>Nome, cidade/estado do cliente</p>
         </div>
+        <div class="col">
+          <img src="" alt="" />
+          <p>
+            Espaço para conteúdo do comentário fornecidos pelo cliente após a
+            finalização do serviço
+          </p>
+          <p>Nome, cidade/estado do cliente</p>
+        </div>
+        <div class="col">
+          <img src="" alt="" />
+          <p>
+            Espaço para conteúdo do comentário fornecidos pelo cliente após a
+            finalização do serviço
+          </p>
+          <p>Nome, cidade/estado do cliente</p>
+        </div>
+      </div>
     </section>
-    
+
     <footer class="text-center text-white" style="background-color: #3f51b5">
       <!-- Grid container -->
       <div class="container">
         <section class="mb-3">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8 pt-4">
-                <h2>Ficou interessado?</h2>
-                <p>Clique em um dos ícones e entre em contato para solicitar seu orçamento!</p>
+              <h2>Ficou interessado?</h2>
+              <p>
+                Clique em um dos ícones e entre em contato para solicitar seu
+                orçamento!
+              </p>
             </div>
           </div>
         </section>
         <!-- Section: Social -->
         <section class="text-center mb-5">
-            <!-- Facebook -->
-            <a data-mdb-ripple-init class="btn " style="background-color: #3b589800;" href="#!" role="button"
-            ><i class="fab fa-facebook-f fa-3x" ></i></a>
-            <!-- Instagram -->
-            <a data-mdb-ripple-init class="btn" style="background-color: #ac2bac00;" href="#!" role="button"
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn"
+            style="background-color: #3b589800"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f fa-3x"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn"
+            style="background-color: #ac2bac00"
+            href="#!"
+            role="button"
             ><i class="fab fa-instagram fa-3x"></i
-            ></a>
-            <!-- Whatsapp -->
-            <a data-mdb-ripple-init class="btn" style="background-color: #25d36500;" href="#!" role="button"
+          ></a>
+          <!-- Whatsapp -->
+          <a
+            data-mdb-ripple-init
+            class="btn"
+            style="background-color: #25d36500"
+            href="#!"
+            role="button"
             ><i class="fab fa-whatsapp fa-3x"></i
-            ></a>
+          ></a>
         </section>
         <!-- Section: Social -->
       </div>
-      <div
-           class="text-center p-3"
-           style="background-color: rgba(0, 0, 0, 0.2)"
-           >
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/"
-           >MDBootstrap.com</a
-          >
+          >MDBootstrap.com</a
+        >
       </div>
-
     </footer>
-
 
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript">
-        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-        var cardWidth = $(".carousel-item").width();
-        var scrollPosition = 0;
-        $(".carousel-control-next").on("click", function () {
-            if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
-            scrollPosition += cardWidth;  //update scroll position
-            $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); //scroll left
-            }
-        });
-        $(".carousel-control-prev").on("click", function () {
-            if (scrollPosition > 0) {
-            scrollPosition -= cardWidth;
-            $(".carousel-inner").animate({ scrollLeft: scrollPosition },600);
-            }
-        });
+      var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      var cardWidth = $(".carousel-item").width();
+      var scrollPosition = 0;
+      $(".carousel-control-next").on("click", function () {
+        if (scrollPosition < carouselWidth - cardWidth * 4) {
+          //check if you can go any further
+          scrollPosition += cardWidth; //update scroll position
+          $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+        }
+      });
+      $(".carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
