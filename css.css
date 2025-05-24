@@ -2,19 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 242);
 }
+
 #casa {
   border-radius: 50%;
   margin: 15px;
 }
+
 #cadeado {
   border-radius: 50%;
   margin: 15px;
 }
+
 #cifrao {
   border-radius: 50%;
   margin: 15px;
@@ -27,13 +31,16 @@ nav {
 #fototeclado {
   border-radius: 30px;
 }
+
 #divtextosobre {
   margin-top: 80px;
   margin-right: 110px;
 }
+
 #div_seg_qualidade_gar {
   margin: 50px;
 }
+
 .botao_sobre {
   display: flex;
   width: 120px;
@@ -45,7 +52,8 @@ nav {
   border-radius: 8px;
   font-weight: bold;
   font-size: 15px;
-  cursor: pointer; /* opcional: cursor de botão */
+  cursor: pointer;
+  /* opcional: cursor de botão */
   color: white;
 }
 
@@ -57,24 +65,131 @@ nav {
   justify-content: center;
   justify-items: center;
 }
+
 .nav-link {
   font-weight: bold;
   font-size: 20px;
 }
+
 #navbar {
   height: 100px;
   width: 100;
   background-color: rgb(214, 217, 231);
   align-items: center;
 }
+
 .head1 {
   margin-bottom: 40px;
   background-color: rgb(214, 217, 231);
   justify-content: center;
 }
+
 #partedohead {
   background-color: rgb(214, 217, 231);
 }
+
 .col {
   font-size: 20px;
 }
+
+@media (min-width: 468px) {
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+      width: 350px; /* ou o tamanho que quiser */
+  margin-right: 10px;
+  flex: 0 0 auto;
+  }
+}
+
+.carousel-inner {
+  padding: 1em;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+  align-items: center;
+  scrollbar-width: none;
+  padding: 40px 0;
+}
+.carousel-inner::-webkit-scrollbar {
+  display: none;
+}
+.carousel-item {
+  flex: 0 0 300px; /* largura fixa, ajuste conforme seu layout */
+  margin: 0 16px;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: opacity 0.4s, transform 0.4s;
+  z-index: 1;
+}
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+
+
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  width: 300px;
+  height: 200px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .testimonials {
+      position: relative;
+      height: 300px; /* Ajuste conforme necessário */
+    }
+
+    .testimonial {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .testimonial.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+
