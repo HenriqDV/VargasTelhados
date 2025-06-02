@@ -75,3 +75,46 @@ $(document).ready(function () { // Aguarda o carregamento do DOM
         testimonials[currentIndex].classList.add("active"); // Ativa o próximo depoimento
     }, 3000);
 });
+
+
+
+
+
+// modal de orçamento
+// Abrir e fechar modal
+document.getElementById('abrirModal').addEventListener('click', function () {
+  document.getElementById('modal').style.display = 'block';
+});
+
+document.getElementById('fecharModal').addEventListener('click', function () {
+  document.getElementById('modal').style.display = 'none';
+});
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('modal')) {
+    document.getElementById('modal').style.display = 'none';
+  }
+};
+
+// Função de cálculo
+function calcular() {
+  const base = parseFloat(document.getElementById('base').value);
+  const altura = parseFloat(document.getElementById('altura').value);
+  const valorMetro = parseFloat(document.getElementById('valor').value);
+  const resultadoDiv = document.getElementById('resultado');
+
+  if (isNaN(base) || isNaN(altura) || isNaN(valorMetro)) {
+    resultadoDiv.style.display = 'block';
+    resultadoDiv.innerHTML = "Por favor, preencha todos os campos corretamente.";
+    return;
+  }
+
+  const area = base * altura;
+  const preco = area * valorMetro;
+
+  resultadoDiv.style.display = 'block';
+  resultadoDiv.innerHTML = `
+    <strong>Área do Telhado:</strong> ${area.toFixed(2)} m²<br>
+    <strong>Orçamento Estimado:</strong> R$ ${preco.toFixed(2)}
+  `;
+}
