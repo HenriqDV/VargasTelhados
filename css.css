@@ -207,17 +207,22 @@ nav {
   scroll-margin-top: 150px; /* distância desejada do topo */
 }
 
+/* Fundo da seção de feedbacks ocupando 100% da tela */
+.fundo-feedbacks {
+  width: 100%;
+  scroll-margin-top: 100px; /* distância desejada do topo */
+  padding: 60px 20px;
+ background: #FFFFFF;
+background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(63, 81, 181, 1) 0%, rgba(255, 255, 255, 1) 50%);
+}
+
 /* Área dos depoimentos */
 .testimonials {
   position: relative;
   height: 300px;
-  /* Ajuste conforme necessário */
-  
+  width: 100%;
 }
-#trabalho{
-background: radial-gradient(circle at center, #3f51b534 0%, #ffffff 100%);
 
-}
 /* Cada depoimento (inicialmente oculto) */
 .testimonial {
   position: absolute;
@@ -228,7 +233,7 @@ background: radial-gradient(circle at center, #3f51b534 0%, #ffffff 100%);
   transition: opacity 1s ease-in-out;
 }
 
-/* Depoimento ativo (visível) */
+/* Depoimento visível */
 .testimonial.active {
   opacity: 1;
   z-index: 1;
@@ -242,6 +247,7 @@ background: radial-gradient(circle at center, #3f51b534 0%, #ffffff 100%);
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 
 /* Espaçamento entre itens do menu em telas pequenas */
 @media (max-width: 743px) {
