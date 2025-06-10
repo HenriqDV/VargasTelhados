@@ -100,21 +100,34 @@ window.onclick = function(event) {
 function calcular() {
   const base = parseFloat(document.getElementById('base').value);
   const altura = parseFloat(document.getElementById('altura').value);
-  const valorMetro = parseFloat(document.getElementById('valor').value);
+  const valorporMetro = 200;
   const resultadoDiv = document.getElementById('resultado');
 
-  if (isNaN(base) || isNaN(altura) || isNaN(valorMetro)) {
+  if (isNaN(base) || isNaN(altura) ) {
     resultadoDiv.style.display = 'block';
     resultadoDiv.innerHTML = "Por favor, preencha todos os campos corretamente.";
     return;
   }
 
   const area = base * altura;
-  const preco = area * valorMetro;
+  const preco = area * valorporMetro; // Preço por m²
 
   resultadoDiv.style.display = 'block';
   resultadoDiv.innerHTML = `
     <strong>Área do Telhado:</strong> ${area.toFixed(2)} m²<br>
-    <strong>Orçamento Estimado:</strong> R$ ${preco.toFixed(2)}
+    <strong>Orçamento Estimado:</strong> R$ ${preco.toFixed(2)} <br>
+    <strong>Valor por Metro:</strong> R$ ${valorporMetro.toFixed(2)}<br><br>
+    <strong>Valores descritos pode variar, </strong><br>
+    Para um orçamento mais detalhado, entre em contato:<br>
+            <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn" style="background-color: #3b589800; color:black;"
+          href="https://www.facebook.com/vargastelhados/?locale=pt_BR" role="button"><i
+            class="fab fa-facebook-f fa-3x"></i></a>
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn" style="background-color: #ac2bac00; color:black;"
+          href="https://www.instagram.com/vargas_telhados/" role="button"><i class="fab fa-instagram fa-3x"></i></a>
+        <!-- Whatsapp -->
+        <a data-mdb-ripple-init class="btn" style="background-color: #25d36500; color:black; " href="https://wa.me/5551985380601"
+          role="button"><i class="fab fa-whatsapp fa-3x"></i></a>
   `;
 }

@@ -2,18 +2,23 @@
   margin: 0;
   padding: 0;
 }
-
+p{
+  font-size: 24px !important;
+}
 
 /* */
 elemento {
   --main-bg-color: brown;
 }
+  #divpai_sobre{
+    margin-top: 70px;
+  }
 
-/* Estilo do corpo da página */
+  /* Estilo do corpo da página */
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 242);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Ícones das seções de qualidade */
@@ -26,13 +31,18 @@ body {
 
 /* Barra de navegação */
 nav {
-  background-color: rgb(255, 255, 242);
+  background-color: rgb(214, 217, 231);
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Imagem principal da seção "Sobre" */
 #img-fluid {
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 8px;
@@ -46,15 +56,15 @@ nav {
 /* Botão "Saiba Mais" da seção sobre */
 .botao_sobre {
   display: flex;
-  width: 120px;
-  height: 40px;
-  background-color: rgb(44, 25, 150);
+  width: 180px;
+  height: 60px;
+  background-color: #3f51b5;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   color: white;
 }
@@ -82,33 +92,38 @@ nav {
 }
 
 /* Container da barra de navegação */
-#navbar {
-  height: 100px;
+
+
+/* Cabeçalho (fundo de tela toda) */
+.head1 {
+  margin-bottom: 40px;
   width: 100%;
-  background-color: rgb(214, 217, 231);
-  justify-content: center;
+}
+
+.fundo-barra {
+  background-color: rgb(214, 217, 231) !important; /* cor que vai até as extremidades */
+  width: 100%;
+    position: fixed;
+    top: 0;
+      z-index: 1001;
+}
+
+/* Parte central da barra */
+.container-navegacao {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* Cabeçalho */
-.head1 {
-  margin-bottom: 40px;
-  background-color: rgb(214, 217, 231);
-  justify-content: center;
-}
-
+/* Logo */
 .logo {
   max-height: 80px;
   height: auto;
   width: auto;
   margin-right: 24px;
-}
-
-/* Parte interna do cabeçalho */
-#partedohead {
-  background-color: rgb(214, 217, 231);
-  justify-content: center;
-  align-items: center;
 }
 
 /* Colunas das seções */
@@ -126,7 +141,7 @@ nav {
     margin-right: 0;
     flex: 0 0 33.333333%;
     display: block;
-    width: 350px;
+    width: 550px; 
     flex: 0 0 auto;
   }
 
@@ -177,10 +192,10 @@ nav {
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #656464;
-  width: 5.5vh;
-  height: 5.5vh;
+  width: 10vh;
+  height: 10vh;
   border-radius: 50%;
-  top: 50%;
+  top: 40%;
   transform: translateY(-10%);
 }
 
@@ -189,6 +204,7 @@ nav {
   max-width: 950px;
   margin: auto;
   padding: 40px 20px;
+  scroll-margin-top: 150px; /* distância desejada do topo */
 }
 
 /* Área dos depoimentos */
@@ -196,8 +212,12 @@ nav {
   position: relative;
   height: 300px;
   /* Ajuste conforme necessário */
+  
 }
+#trabalho{
+background: radial-gradient(circle at center, #3f51b534 0%, #ffffff 100%);
 
+}
 /* Cada depoimento (inicialmente oculto) */
 .testimonial {
   position: absolute;
@@ -236,19 +256,24 @@ nav {
     align-items: center !important;
     text-align: center;
   }
-
+  .fundo-barra{
+    position: absolute;
+  }
   .nav {
     flex-direction: column !important;
     gap: 0.5rem !important;
   }
-
+  #divpai_sobre{
+    margin-top: 300px;
+  }
 }
 
 /* Modal de orçamento */
 button {
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #3f51b5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -256,14 +281,13 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #1f2c77;
 }
 
 /* Modal */
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
   padding-top: 80px;
   left: 0;
   top: 0;
@@ -271,10 +295,11 @@ button:hover {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+  z-index: 1011;
 }
 
 .modal-conteudo {
-  background-color: white;
+  background-color: rgb(214, 217, 231);
   margin: auto;
   padding: 20px;
   border-radius: 10px;
@@ -315,4 +340,11 @@ input {
   padding: 15px;
   border-radius: 4px;
   font-size: 18px;
+}
+
+.btn{
+  color: white;
+}
+.btn:hover {
+  color: #000000 !important;
 }
