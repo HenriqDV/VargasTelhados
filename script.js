@@ -96,38 +96,50 @@ window.onclick = function(event) {
   }
 };
 
-// Função de cálculo
+// Função de cálculo com a fórmula detalhada para pré-orçamento
 function calcular() {
   const base = parseFloat(document.getElementById('base').value);
   const altura = parseFloat(document.getElementById('altura').value);
-  const valorporMetro = 200;
+  const valorMaoDeObra = 200; // V = valor do serviço por m² (ajuste se necessário)
+  const valorManta = 60;      // ma = valor da manta asfáltica por m² (ajuste se necessário)
   const resultadoDiv = document.getElementById('resultado');
 
-  if (isNaN(base) || isNaN(altura) ) {
+  if (isNaN(base) || isNaN(altura)) {
     resultadoDiv.style.display = 'block';
     resultadoDiv.innerHTML = "Por favor, preencha todos os campos corretamente.";
     return;
   }
 
-  const area = base * altura;
-  const preco = area * valorporMetro; // Preço por m²
+  // Cálculos
+  const area = base * altura; // A
+  const maoDeObra = area * valorMaoDeObra; // M = A * V
+  const material = (area + (0.6 * area)) * valorManta; // mt = (A + 60%A) * ma
+  const valorTotal = maoDeObra + material; // VT = M + mt
 
   resultadoDiv.style.display = 'block';
   resultadoDiv.innerHTML = `
-    <strong>Área do Telhado:</strong> ${area.toFixed(2)} m²<br>
-    <strong>Orçamento Estimado:</strong> R$ ${preco.toFixed(2)} <br>
-    <strong>Valor por Metro:</strong> R$ ${valorporMetro.toFixed(2)}<br><br>
-    <strong>Valores descritos pode variar, </strong><br>
+    <strong>Área do telhado:</strong> ${area} m²<br>
+    <strong>Mão de obra:</strong> R$ ${maoDeObra.toFixed(2)}<br>
+    <strong>Material:</strong> R$ ${material.toFixed(2)}<br>
+    <hr>
+    <strong>Total aproximado:</strong> <span style="color:green"><b>R$ ${valorTotal.toFixed(2)}</b></span><br>
+    <hr>
+    <small style="color:#888;">  
+      * Valor do material por m²: R$ ${valorManta.toFixed(2)}<br>
+      * Valor mão de obra por m²: R$ ${valorMaoDeObra.toFixed(2)}<br>
+      * Valores podem variar conforme o tipo de telha e condições do local.
+    </small>
+    <br><br>
     Para um orçamento mais detalhado, entre em contato:<br>
-            <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #3b589800; color:black;"
-          href="https://www.facebook.com/vargastelhados/?locale=pt_BR" role="button"><i
-            class="fab fa-facebook-f fa-3x"></i></a>
-        <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #ac2bac00; color:black;"
-          href="https://www.instagram.com/vargas_telhados/" role="button"><i class="fab fa-instagram fa-3x"></i></a>
-        <!-- Whatsapp -->
-        <a data-mdb-ripple-init class="btn" style="background-color: #25d36500; color:black; " href="https://wa.me/5551985380601"
-          role="button"><i class="fab fa-whatsapp fa-3x"></i></a>
+    <!-- Facebook -->
+    <a class="btn" style="background-color: #3b589800; color:black;"
+      href="https://www.facebook.com/vargastelhados/?locale=pt_BR" role="button"><i
+        class="fab fa-facebook-f fa-3x"></i></a>
+    <!-- Instagram -->
+    <a class="btn" style="background-color: #ac2bac00; color:black;"
+      href="https://www.instagram.com/vargas_telhados/" role="button"><i class="fab fa-instagram fa-3x"></i></a>
+    <!-- Whatsapp -->
+    <a class="btn" style="background-color: #25d36500; color:black;" href="https://wa.me/5551985380601"
+      role="button"><i class="fab fa-whatsapp fa-3x"></i></a>
   `;
 }
