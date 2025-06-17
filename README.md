@@ -10,12 +10,12 @@ Esse projeto é um site para divulgação dos trabalhos de manutenção de telha
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site1.jpg)
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site2.jpg)
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site3.jpg)
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site4.jpg)
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site5.jpg)
-![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/44c5b72cfb8c4583406e72c0b9dfaaf3a9ce7af5/img/site/site6.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site1.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site2.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site3.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site4.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site5.jpg)
+![App Screenshot](https://raw.githubusercontent.com/HenriqDV/VargasTelhados/ba99b1640fef3780bb678a7cfe68058900faca2e/img/site/site6.jpg)
 
 
 ## Documentação
