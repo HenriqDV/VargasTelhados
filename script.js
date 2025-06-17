@@ -19,23 +19,32 @@ $(document).ready(function () { // Aguarda o carregamento do DOM
     // Inicializa o carrossel centralizando o primeiro item
     centerActive();
 
-    // Botão "Próximo"
+    // Função para mover o carrossel
+function moverCarrossel(direcao) {
+  if (direcao === 'proximo') {
+    var $item = $carouselInner.find(".carousel-item").first();
+    $item.fadeOut(200, function () {
+      $item.appendTo($carouselInner).show();
+      updateActive();
+      centerActive();
+    });
+  } else {
+    var $item = $carouselInner.find(".carousel-item").last();
+    $item.hide().prependTo($carouselInner).fadeIn(200, function () {
+      updateActive();
+      centerActive();
+    });
+  }
+}
+
+// Botão "Próximo"
     $(".carousel-control-next").on("click", function () { // Ao clicar no botão próximo
-        var $first = $carouselInner.find(".carousel-item").first(); // Seleciona o primeiro item
-        $first.fadeOut(200, function () {                           // Faz o item desaparecer
-            $first.appendTo($carouselInner).show();                 // Move o item para o final e mostra novamente
-            updateActive();                                         // Atualiza a classe 'active'
-            centerActive();                                         // Centraliza o novo item ativo
-        });
+        moverCarrossel('proximo');
     });
 
     // Botão "Anterior"
     $(".carousel-control-prev").on("click", function () { // Ao clicar no botão anterior
-        var $last = $carouselInner.find(".carousel-item").last();   // Seleciona o último item
-        $last.hide().prependTo($carouselInner).fadeIn(200, function () { // Move o item para o início e faz aparecer
-            updateActive();                                         // Atualiza a classe 'active'
-            centerActive();                                         // Centraliza o novo item ativo
-        });
+        moverCarrossel('anterior');
     });
 
     function updateActive() {
@@ -108,7 +117,7 @@ function calcular() {
     resultadoDiv.style.display = 'block';
     resultadoDiv.innerHTML = "Por favor, preencha todos os campos corretamente.";
     return;
-  }
+  } 
 
   // Cálculos
   const area = base * altura; // A

@@ -30,8 +30,12 @@ body {
 }
 
 /* Barra de navegação */
+.botaoMenu{
+  background-color: #3f51b5 !important;
+  color: #d6d9e7 !important;
+}
 nav {
-  background-color: rgb(214, 217, 231);
+  background-color: #d6d9e7;
   top: 0;
   right: 0;
   left: 0;
@@ -197,6 +201,7 @@ nav {
   border-radius: 50%;
   top: 40%;
   transform: translateY(-10%);
+
 }
 
 /* Container padrão para centralizar conteúdo */
@@ -204,13 +209,13 @@ nav {
   max-width: 950px;
   margin: auto;
   padding: 40px 20px;
-  scroll-margin-top: 150px; /* distância desejada do topo */
+  scroll-margin-top: 100px; /* distância desejada do topo */
 }
 
 /* Fundo da seção de feedbacks ocupando 100% da tela */
 .fundo-feedbacks {
   width: 100%;
-  scroll-margin-top: 100px; /* distância desejada do topo */
+  scroll-margin-top: 50px; /* distância desejada do topo */
   padding: 60px 20px;
  background: #FFFFFF;
 background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(63, 81, 181, 1) 0%, rgba(255, 255, 255, 1) 50%);
@@ -254,24 +259,25 @@ background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(63, 81, 181, 1
   .logo {
     max-height: 60px;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   #partedohead {
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
     text-align: center;
   }
-  .fundo-barra{
-    position: absolute;
-  }
-  .nav {
-    flex-direction: column !important;
-    gap: 0.5rem !important;
-  }
   #divpai_sobre{
-    margin-top: 300px;
+    margin-top: 75px;
   }
+  #img-fluid {
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
 }
 
 /* Modal de orçamento */
